@@ -54,7 +54,7 @@ public class TextTracker {
 
     public void setLongestWord(String inputText) {
         String[] words = inputText.split(" ");
-        String[] words1 = inputText.split(" ");
+
 
         int largest = 0;
         String longest = null;
