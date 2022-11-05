@@ -65,9 +65,7 @@ public class TextTracker {
                 longest = words[i];
             }
         }
-        if (longestWord.length() >= longest.length() ){
 
-        }
         longestWord = longest;
 
     }
