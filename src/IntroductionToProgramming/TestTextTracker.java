@@ -12,11 +12,11 @@ public class TestTextTracker {
 
         //Arrange
         TextTracker charCounterTest = new TextTracker();
-        int expected = 6;
+        int expected = 8;
 
         //Act                         //mellanslag +
-        charCounterTest.CharCounter("Hej ho");
-        charCounterTest.CharCounter("");
+        charCounterTest.CharCounter("Hej ho hej");
+
 
         int actual = charCounterTest.GetCharacterCount();
         //Assert
@@ -59,11 +59,14 @@ public class TestTextTracker {
     }
     @Test
     public void TestLongestWord(){
+        // Om första ordet i text är redan stor test
         TextTracker longestWordTest = new TextTracker();
-        String expected = "eftermiddag";
+        String expected = "hejjjjjjjjjjjjjjjj";
+
 
         longestWordTest.setLongestWord("Jag mår jättebra idag.");
         longestWordTest.setLongestWord("Okej vi se på eftermiddag då.");
+        longestWordTest.setLongestWord("Random text hejjjjjjjjjjjjjjjj");
 
 
         String actual = longestWordTest.GetTheLongestWord();
@@ -74,5 +77,7 @@ public class TestTextTracker {
         assertEquals(expected, actual);
 
     }
+    //@Test
+    //public void TestLongestWordSecond
 
 }

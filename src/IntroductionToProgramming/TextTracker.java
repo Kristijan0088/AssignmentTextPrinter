@@ -18,7 +18,11 @@ public class TextTracker {
     }
 
     public void CharCounter(String Text) {
+
+        Text = Text.replaceAll("\\s", "");
+
         charCounter = charCounter + Text.length();
+
         rowCounter++;
     }
 
@@ -57,16 +61,18 @@ public class TextTracker {
 
 
         int largest = 0;
-        String longest = null;
-        int i;
-        for (i = 0; i < words.length; i++) {
+        String longest = "";
+
+        for (int i = 0; i < words.length; i++) {
             if (largest < words[i].length()) {
                 largest = words[i].length();
                 longest = words[i];
             }
         }
+            if (longestWord.length() < longest.length()){
+                longestWord = longest;
+            }
 
-        longestWord = longest;
 
     }
 
