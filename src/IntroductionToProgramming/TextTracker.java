@@ -19,7 +19,7 @@ public class TextTracker {
     }
 
     public void CharCounter(String Text) {
-
+        //remove whitespace
         Text = Text.replaceAll("\\s", "");
 
         charCounter = charCounter + Text.length();
