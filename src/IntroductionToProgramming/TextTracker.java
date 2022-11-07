@@ -71,7 +71,15 @@ public class TextTracker {
     }
 
     public String GetTheLongestWord() {
+
         return longestWord;
+    }
+    public void GetResult(){
+        System.out.println("Result of how many characters: " + GetCharacterCount());
+        System.out.println("Result of how many rows: " + GetRowCount());
+        System.out.println("Result of how many words: " + GetWordCounter());
+        System.out.println("Result of the longest word in text: " + GetTheLongestWord());
+
     }
 }
 

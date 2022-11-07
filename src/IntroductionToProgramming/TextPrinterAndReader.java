@@ -1,7 +1,6 @@
 package IntroductionToProgramming;
 
 
-
 import java.util.Scanner;
 
 public class TextPrinterAndReader {
@@ -24,25 +23,22 @@ public class TextPrinterAndReader {
                 tracker.CharCounter(inputText);
                 tracker.NumberOfWords(inputText);
                 tracker.setLongestWord(inputText);
+
             }
+
         }
-
-
-        System.out.println("Result of how many characters: " + tracker.GetCharacterCount());
-
-        System.out.println("Result of how many rows: " + tracker.GetRowCount());
-
-        System.out.println("Result of how many words: " + tracker.GetWordCounter());
-
-        System.out.println("Result of the longest word in text: " + tracker.GetTheLongestWord());
-
-
-
-
-
-
+        tracker.GetResult();
 
         System.out.println("You have exited the program!");
+
+        /*
+        System.out.println("Result of how many characters: " + tracker.GetCharacterCount());
+        System.out.println("Result of how many rows: " + tracker.GetRowCount());
+        System.out.println("Result of how many words: " + tracker.GetWordCounter());
+        System.out.println("Result of the longest word in text: " + tracker.GetTheLongestWord());
+        */
+
+
     }
 
 
