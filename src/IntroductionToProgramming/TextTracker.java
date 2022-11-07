@@ -2,6 +2,7 @@ package IntroductionToProgramming;
 
 public class TextTracker {
 
+    //private attribut måste gå genöm klass TextTracker
     private int charCounter;
     private int rowCounter;
 
